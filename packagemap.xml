@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileset>
+	<file>
+		<path>ics-security-fixes.php</path>
+		<type>php</type>
+		<license>bsd</license>
+	</file>
+	<file>
+		<path>uninstall.php</path>
+		<type>php</type>
+		<license>bsd</license>
+	</file>
+</fileset>
