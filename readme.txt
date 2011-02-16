@@ -14,7 +14,7 @@ Warning: For PHP 5 only.
 Like any other software WordPress does have bugs and security vulnerabilities. They get fixed when the developers become aware of them.
 However, sometimes several WordPress releases are vulnerable. The problem is that the developers do not backport security updates to older WordPress releases.
 As a result, those who do not want to upgrade their WordPress installations (for example, because newer WP releases tend to consume more system resources and
-upgrade may result in having to use more expensive gosting) remain vulnerable.
+upgrade may result in having to use more expensive hosting) remain vulnerable.
 
 ICS Security Fixes is the plugin for those who do not upgrade their WordPress: the plugin tries to fix known WordPress vulnerabilities
 at that remaining compatible with as many old WordPress releases as possible.
