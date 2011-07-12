@@ -3,7 +3,7 @@
 Plugin Name: ICS Security Fixes
 Plugin URI: http://blog.sjinks.pro/wordpress-plugins/ics-security-fixes/
 Description: Tries to fix vulnerabilities in outdated WordPress installations
-Version: 0.6
+Version: 0.6.1
 Author: ICS
 Author URI: http://blog.sjinks.pro/
 License: BSD
@@ -46,6 +46,7 @@ License: BSD
 			}
 
 			add_action('http_api_curl', array($this, 'http_api_curl'));
+			add_action('send_headers',  array($this, 'send_headers'));
 
 			remove_action('wp_head', 'wp_generator');
 			foreach (array('rss2_head', 'commentsrss2_head', 'rss_head', 'rdf_header', 'atom_head', 'comments_atom_head', 'opml_head', 'app_head') as $action) {
@@ -81,6 +82,13 @@ License: BSD
 		public function deactivate_plugin()
 		{
 			delete_option('ics-security-fixes-active');
+		}
+
+		public function send_headers()
+		{
+			if (!headers_sent()) {
+				@header('X-XSS-Protection: 1; mode=block');
+			}
 		}
 
 		public function early_init()
