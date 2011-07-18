@@ -4,7 +4,7 @@ Donate link: http://blog.sjinks.pro/feedback/
 Tags: security, vulnerability
 Requires at least: 2.3
 Tested up to: 3.2
-Stable tag: 0.6.1
+Stable tag: 0.6.2
 
 The plugin tries to fix known WordPress vulnerabilities for older WordPress versions.
 Warning: For PHP 5 only.
@@ -43,6 +43,9 @@ No screenshots, as the plugin does not require user intervention :-) It just wor
 It is strongly recommended that you upgrade to the latest version of the plugin. New versions bring new bug fixes and hopefully do not put in any new bugs.
 
 == Changelog ==
+= 0.6.2 =
+* Added missing xmlrpc.php
+
 = 0.6.1 =
 * Sends X-XSS-Protection header
 
