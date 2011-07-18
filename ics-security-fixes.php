@@ -3,7 +3,7 @@
 Plugin Name: ICS Security Fixes
 Plugin URI: http://blog.sjinks.pro/wordpress-plugins/ics-security-fixes/
 Description: Tries to fix vulnerabilities in outdated WordPress installations
-Version: 0.6.1
+Version: 0.6.2
 Author: ICS
 Author URI: http://blog.sjinks.pro/
 License: BSD
